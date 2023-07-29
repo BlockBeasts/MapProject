@@ -5,18 +5,33 @@ export default function Detail({teamInfo}:{teamInfo: {teamName: string, teamNumb
     return(
         <>
         <div>
-            <h1>Team Name</h1>
-            <h3>Team Number</h3>
+            <div>
+                <h1>{teamInfo.teamName}</h1>
+            </div>
+            <div>
+                <h3>{teamInfo.teamNumber}</h3>
+            </div>
         </div>
         <div>
-            <h5>Country</h5>
-            <h5>State</h5>
-            <h5>City</h5>
+            <h5>Location: </h5>
         </div>
         <div>
-            <h5>Contact Info</h5>
-            <h5>Awards</h5>
-            <h5>A message about contacting us if something is not right or you want to add more info.</h5>
+            <h5>{teamInfo.city}, {teamInfo.state}, {teamInfo.country}</h5>
+        </div>
+        <div>
+            <h5>Contact Info: </h5>
+        </div>
+        <div>
+            <h5>{teamInfo.contactInfo}</h5>
+        </div>
+        <div>
+            <h5>Awards: </h5>
+        </div>
+        <div>
+            <h5>{teamInfo.awards}</h5>
+        </div>
+        <div>
+            <h5>message about contacting us if something is not right or you want to add something</h5>
         </div>
         </>
     )
