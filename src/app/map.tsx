@@ -1,4 +1,7 @@
+import MapChart from "@/mapChart";
 import * as React from "react";
+
+import styles from "./page.module.css";
 
 export default function Map({countryCode, stateCode, onClick}: {countryCode: string, stateCode: string,onClick: Function}) {
 
@@ -7,7 +10,8 @@ export default function Map({countryCode, stateCode, onClick}: {countryCode: str
     //click on team to display details
 
     return(
-        <>{countryCode}</>
+        <div className={styles.mapContainer}><MapChart/></div>
+        
     )
 }
 
