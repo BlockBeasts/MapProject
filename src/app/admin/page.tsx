@@ -98,12 +98,29 @@ export default function Page() {
             />
             <Button variant="outlined" onClick={searchTeam}>Search</Button>
             {teamInfo!=null && <div>
-                <div>Team Number: {teamInfo.teamNumber}</div>
-                <div>Team Name: {teamInfo.teamName}</div>
-                <div>Country: {teamInfo.country}</div>
-                <div>State: {teamInfo.state}</div>
-                <div>City: {teamInfo.city}</div>
-                <div>Contact Info</div>
+                <span className={styles.teaminfoinput}>
+                    <span>Team Number: {teamInfo.teamNumber}</span>
+                </span>
+                <br/>
+                <span>
+                    <span>Team Name: {teamInfo.teamName}</span>
+                </span>
+                <br/>
+                <span>
+                    <span>Country: {teamInfo.country}</span>
+                </span>
+                <br/>
+                <span>
+                    <span>State: {teamInfo.state}</span>
+                </span>
+                <br/>
+                <span>
+                    <span>City: {teamInfo.city}</span>
+                </span>
+                <br/>
+                <span>
+                    <span>Contact Info: </span>
+                </span>
                 <TextField
                 id= "outlined-basic"
                 placeholder="Contact Info"

@@ -123,7 +123,6 @@ function updateTask(task:string){
            </div>
          <div className={styles.rightContainer}>
            <Search
-
               updateSearchValue={updateSearchValue}
               updateSearchType={updateSearchType}
             />
